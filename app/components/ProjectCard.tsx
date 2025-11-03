@@ -35,61 +35,94 @@ export default function ProjectCard({
       <motion.div
         whileHover={{ scale: 1.03 }}
         transition={{ type: "spring", stiffness: 300 }}
-        className="bg-white border-2 border-black shadow-[4px_4px_0_#000] rounded-xl overflow-hidden max-w-sm"
+        className="bg-white border-2 border-black shadow-[4px_4px_0_#000] rounded-xl overflow-visible max-w-sm"
       >
-        <div className="relative cursor-pointer" onClick={() => setShowModal(true)}>
-          <img
-            src={images[0]}
-            alt={title}
-            className="w-full h-48 object-cover transition-transform duration-500"
-          />
+        <div
+          className="relative cursor-pointer bg-blue-100 flex justify-center items-center h-52 overflow-hidden"
+          onClick={() => setShowModal(true)}
+        >
+          <div className="w-[95%] h-[100%] rounded-xl overflow-hidden flex items-center justify-center ">
+            <img
+              src={images[0]}
+              alt={title}
+              className="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+
           <motion.div
-            className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-center py-2 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300"
+            className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/60 text-white text-xs px-3 py-1 rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300"
           >
             Click to view fullscreen
           </motion.div>
         </div>
 
+
+
+
         <div className="p-3">
-        {techStack && techStack.length > 0 && (
-  <div className="flex flex-wrap gap-1 mb-1">
-    {techStack.map((tech, i) => (
-      <span
-        key={i}
-        className="
+          {techStack && techStack.length > 0 && (
+            <div className="flex flex-wrap gap-1 mb-1">
+              {techStack.map((tech, i) => (
+                <span
+                  key={i}
+                  className="
           bg-yellow-300 text-gray-800 
           text-[11px] font-medium px-2 py-[2px] rounded-full
           border border-black-300
         "
-      >
-        {tech}
-      </span>
-    ))}
-  </div>
-)}
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
 
           <h3 className="text-xl font-bold mb-2">{title}</h3>
-         
+
           <p className="text-gray-700 text-sm mb-4">{description}</p>
           {/* 🧠 Tech Stack */}
-          
+
 
           <div className="flex justify-between items-center">
-            <a
-              href={github}
-              target="_blank"
-              className="flex items-center gap-1 text-sm font-medium border-2 border-black px-3 py-1 rounded-md hover:bg-black hover:text-white transition-all"
-            >
-              <Github size={16} /> Code
-            </a>
-            <a
-              href={live}
-              target="_blank"
-              className="flex items-center gap-1 text-sm font-medium border-2 border-black px-3 py-1 rounded-md hover:bg-black hover:text-white transition-all"
-            >
-              <Globe size={16} /> Live
-            </a>
+            {github ? (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-sm font-medium border-2 border-black px-3 py-1 rounded-md hover:bg-black hover:text-white transition-all"
+              >
+                <Github size={16} /> Code
+              </a>
+            ) : (
+             <div className="relative group">
+  <span className="flex items-center gap-1 text-sm text-gray-600 border-2 border-gray-400 px-3 py-1 rounded-md bg-gray-100 cursor-not-allowed">
+    <Github size={16} className="opacity-60" /> Private
+  </span>
+
+  {/* Tooltip */}
+  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg z-10">
+    Codebase is private (confidential or client project)
+  </span>
+</div>
+            )}
+
+            {live ? (
+              <a
+                href={live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-sm font-medium border-2 border-black px-3 py-1 rounded-md hover:bg-black hover:text-white transition-all"
+              >
+                <Globe size={16} /> Live
+              </a>
+            ) : (
+              <span className="flex items-center gap-1 text-sm text-gray-600 border-2 border-gray-400 px-3 py-1 rounded-md bg-gray-100 cursor-not-allowed">
+                <Globe size={16} className="opacity-60" /> Not Hosted
+              </span>
+            )}
           </div>
+
+
         </div>
       </motion.div>
 

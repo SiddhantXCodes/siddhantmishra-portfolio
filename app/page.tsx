@@ -11,11 +11,11 @@ import Footer from "./components/Footer";
 export default function Home() {
  const allProjects = [
     {
-      title: "Speed Maths App",
+      title: "Online Application for Stable Isotope Studies-Groundwater (OASIS-G)",
       desc: "A Flutter app to improve calculation speed and accuracy.",
-      img: ["/projects/project1.png", "/projects/project2.webp", ],
-      github: "https://github.com/yourusername/speedmaths",
-      live: "https://speedmaths.vercel.app",
+      img: ["/projects/oasis/oasis1.png", "/projects/oasis/oasis2.png","/projects/oasis/oasis3.png", "/projects/oasis/oasis4.png" ],
+      github: "",
+      live: "https://cgwb.gov.in/OASIS/",
       category: ["Android", "High-level"],
       techStack: ["Flutter", "Dart", "Firebase"],
     },
