@@ -133,7 +133,7 @@ export default function AboutSection() {
             </div>
             <div>
               <p className="font-semibold">
-                Intern — Central Ground Water Board, Ministry of Jal Shakti, Govt. of India
+                FullStack Developer Intern — Central Ground Water Board, Ministry of Jal Shakti, Govt. of India
               </p>
               <p className="text-sm text-gray-600">Jul 2023 – Dec 2023</p>
               <p className="text-sm text-gray-700">

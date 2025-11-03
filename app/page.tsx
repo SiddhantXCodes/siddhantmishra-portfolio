@@ -17,7 +17,7 @@ export default function Home() {
       github: "",
       live: "https://cgwb.gov.in/OASIS/",
       category: ["Android", "High-level"],
-      techStack: ["Flutter", "Dart", "Firebase"],
+      techStack: ["PHP", "MySql", "HTML", "CSS", "Javascript",],
     },
     {
       title: "Vocabulary Builder",
