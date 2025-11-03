@@ -15,7 +15,7 @@ export default function Footer() {
         {/* 🌐 Social Links */}
         <div className="flex justify-center gap-6 mb-4">
           <a
-            href="https://github.com/siddhantmishra"
+            href="https://github.com/siddhantxcodes"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-black p-2 rounded-full hover:bg-black hover:text-white transition-all shadow-[2px_2px_0_#000]"
@@ -24,7 +24,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/in/siddhantmishra"
+            href="https://linkedin.com/in/siddhantmishra7459"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-black p-2 rounded-full hover:bg-[#0077b5] hover:text-white transition-all shadow-[2px_2px_0_#000]"
@@ -33,8 +33,8 @@ export default function Footer() {
           </a>
 
           <a
-            href="mailto:siddhantmishra.dev@gmail.com"
-            className="border-2 border-black p-2 rounded-full hover:bg-yellow-100 transition-all shadow-[2px_2px_0_#000]"
+            href="mailto:siddhantmishra.pro@gmail.com"
+            className="border-2 border-black p-2 rounded-full hover:bg-red-600 hover:text-white transition-all shadow-[2px_2px_0_#000]"
           >
             <Mail size={20} />
           </a>

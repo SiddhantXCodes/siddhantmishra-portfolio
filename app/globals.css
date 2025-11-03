@@ -141,11 +141,23 @@
     transform: translateY(6px);
   }
 
- .section-divider {
-  border-top: 3px dotted #000;
-  width: 85%;
-  margin: 3rem auto;
-  opacity: 0.8;
+.section-divider {
+  position: relative;
+  width: 90%;
+  height: 3px;
+  background-color: #000;
+  margin: 4rem auto;
+}
+
+.section-divider::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 40%;
+  height: 3px;
+  background-color: #facc15; /* Tailwind yellow-400 */
+  border-radius: 2px;
 }
 
 
