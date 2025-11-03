@@ -83,7 +83,7 @@ export default function Home() {
         <div className="relative mb-4">
           <div className="bg-[#fffef9] border-2 border-black p-2 rounded-lg shadow-[4px_4px_0_#000] transform rotate-[-2deg] hover:rotate-[0deg] transition-transform duration-300">
             <img
-              src="/siddhant_mishra_image.jpg"
+              src="/siddhant_mishra_image.JPG"
               alt="Siddhant Mishra"
               className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg border-2 border-black"
             />
