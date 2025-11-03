@@ -11,6 +11,7 @@
 
   html {
     background: radial-gradient(circle at center, #fefefe 0%, #f3f3f3 100%);
+    scroll-behavior: smooth;
   }
 
   body {

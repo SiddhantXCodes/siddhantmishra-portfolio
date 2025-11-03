@@ -16,8 +16,8 @@ export default function Home() {
       img: ["/projects/oasis/oasis1.png", "/projects/oasis/oasis2.png","/projects/oasis/oasis3.png", "/projects/oasis/oasis4.png" ],
       github: "",
       live: "https://cgwb.gov.in/OASIS/",
-      category: ["Android", "High-level"],
-      techStack: ["PHP", "MySql", "HTML", "CSS", "Javascript",],
+      category: ["Web", "High-level"],
+      techStack: ["PHP", "MySql", "HTML", "CSS", "Bootstrap",],
     },
     {
       title: "Vocabulary Builder",
