@@ -4,12 +4,12 @@ import { useState } from "react";
 import { X, Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-interface ResumeModalProps {
-  onClose: () => void; // ✅ define the prop type here
-}
-
 export default function ResumeModal() {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Your OneDrive Resume Link
+  const resumeLink =
+    "https://onedrive.live.com/personal/a0432b20eebe2f83/_layouts/15/Doc.aspx?sourcedoc=%7Bc2e3fc30-a04a-4822-9085-e5edaadcfe94%7D&action=default&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3cvYy9hMDQzMmIyMGVlYmUyZjgzL0lRQXdfT1BDU3FBaVNKQ0Y1ZTJxM1A2VUFlQ1hPOURNN25ZUXVtNUFsdXFIaUpFP2U9MXA1RWNq&slrid=5917dda1-8038-a000-e302-7daf7391a7c8&originalPath=aHR0cHM6Ly8xZHJ2Lm1zL3cvYy9hMDQzMmIyMGVlYmUyZjgzL0lRQXdfT1BDU3FBaVNKQ0Y1ZTJxM1A2VUFlQ1hPOURNN25ZUXVtNUFsdXFIaUpFP3J0aW1lPU9PMEpBY1lzM2tn&CID=856aa6ed-9626-4718-93d2-2822b635b0e7&_SRM=0:G:194";
 
   return (
     <>
@@ -42,12 +42,13 @@ export default function ResumeModal() {
                 <h3 className="text-lg font-bold">My Resume</h3>
                 <div className="flex gap-3">
                   <a
-                    href="https://1drv.ms/w/c/a0432b20eebe2f83/IQAw_OPCSqAiSJCF5e2q3P6UAeCXO9DM7nYQum5AluqHiJE?e=1p5Ecj"
-                    download
-                    className="text-sm font-semibold border-2 border-black px-2 py-1 rounded hover:bg-yellow-200"
+                    href={resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold border-2 border-black px-2 py-1 rounded hover:bg-yellow-200 flex items-center"
                   >
-                    <Download size={16} className="inline mr-1" />
-                    Download
+                    <Download size={16} className="mr-1" />
+                    Open in OneDrive
                   </a>
                   <button onClick={() => setIsOpen(false)}>
                     <X size={22} />
@@ -55,10 +56,11 @@ export default function ResumeModal() {
                 </div>
               </div>
 
+              {/* OneDrive Viewer in iframe */}
               <iframe
-                src="/resume.pdf"
+                src={resumeLink}
                 className="w-full h-[85vh]"
-                title="Resume PDF"
+                title="Resume from OneDrive"
               ></iframe>
             </motion.div>
           </motion.div>
