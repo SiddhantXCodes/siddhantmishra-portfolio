@@ -28,30 +28,14 @@ export default function Home() {
       category: ["Web", "Intermediate"],
       techStack: ["React", "TypeScript", "TailwindCSS"],
     },
-    {
-      title: "Study Timer System",
-      desc: "Smart study timer like YPT app — stay focused and track your sessions.",
-    img: ["/projects/project1.png", "/projects/project1.png", "/projects/project1.png"],
-      github: "https://github.com/yourusername/study-timer",
-      live: "https://study-timer.vercel.app",
-      category: ["Android", "Basic"],
-      techStack: ["Flutter", "Firebase", "Provider"],
-    },
+ 
     {
       title: "Portfolio Website",
       desc: "A handcrafted portfolio website with animations and unique design.",
      img: ["/projects/project1.png", "/projects/project1.png", "/projects/project1.png"],
-      github: "https://github.com/yourusername/portfolio",
-      live: "https://portfolio.vercel.app",
+      github: "https://github.com/siddhantxcodes/siddhant-mishra-portfolio",
+      live: "https://siddhantmishra.pages.dev",
       category: ["Web", "High-level"],
-    },
-    {
-      title: "AI Chat App",
-      desc: "An experimental chat app powered by AI using Node.js and OpenAI API.",
-      img: "/projects/project1.png",
-      github: "https://github.com/yourusername/aichat",
-      live: "https://aichat.vercel.app",
-      category: ["AI/ML", "High-level", "Web"],
     },
   ];
 

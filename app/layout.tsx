@@ -12,19 +12,19 @@ export const metadata = {
     "Siddhant Mishra, Flutter Developer, Mobile App Developer, Portfolio, Resume, Projects, Speed Maths App, Siddhant Mishra Portfolio",
   authors: [{ name: "Siddhant Mishra" }],
   robots: "index, follow",
-  metadataBase: new URL("https://siddhantmishra.vercel.app"),
+  metadataBase: new URL("https://siddhantmishra.pages.dev"),
   alternates: {
-    canonical: "https://siddhantmishra.vercel.app",
+    canonical: "https://siddhantmishra.pages.dev",
   },
   openGraph: {
     title: "Siddhant Mishra | Flutter Developer & App Creator",
     description:
       "Explore Siddhant Mishra’s portfolio — Flutter developer passionate about building fast, functional, and creative apps.",
-    url: "https://siddhantmishra.vercel.app",
+    url: "https://siddhantmishra.pages.dev",
     siteName: "Siddhant Mishra Portfolio",
     images: [
       {
-        url: "/siddhant_mishra_image.JPG", // optional preview image (1200x630 recommended)
+        url: "/siddhant_mishra_image.JPG", 
         width: 1200,
         height: 630,
         alt: "Siddhant Mishra Portfolio Preview",
